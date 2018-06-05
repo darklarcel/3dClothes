@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+
+        android:id="@+id/introduccionsaludo"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.09"
+        android:text="Hola usuario!"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="¿Quien necesita ir de tiendas si tienes tu propia fabrica en casa? "
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="En 3dClothes nos lo tomamos muy en serio y hemos llevado la impresion en 3d un paso mas haya ;) "
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/introduccioncomenzar"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Comenzar!" />
+
+
+</LinearLayout>

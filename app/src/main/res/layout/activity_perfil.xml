@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/perfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+
+        android:id="@+id/Saludo"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Datos de perfil"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Si necesitas cambiar algun dato hazlo y no te olvides de pulsar el boton de guardar "
+        android:textAlignment="center" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nombre"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/perfil_nombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Correo Electronico"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/perfil_correo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/perfil_fnac"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="date"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/perfil_peso"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Peso (Kg)"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+    <Spinner
+        android:id="@+id/spinner_perfil"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:hint="Talla"
+        android:textAlignment="center" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sexo"
+        android:textAlignment="center" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/opciones_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/perfil_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+
+
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/perfil_femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Femenino" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/modificar_perfil"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+
+
+        android:text="Guardar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_tshirt_crew"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:borderWidth="0dp"
+        app:fabSize="normal" />
+
+
+</LinearLayout>
